@@ -1,5 +1,6 @@
 package com.example.demo.jnidemo;
 
+import android.content.pm.ApplicationInfo;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static MainActivity activity;
 
     @IdRes
-    private int[] resIds = {R.id.javaDiaoc,R.id.cDiaojava1,R.id.cDiaojava2,R.id.cDiaojava3,R.id.cDiaojavajingtai};//点击事件
+    private int[] resIds = {R.id.javaDiaoc,R.id.cDiaojava1,R.id.cDiaojava2,R.id.cDiaojava3,R.id.cDiaojavajingtai,R.id.cDiaojavajfeijingtai};//点击事件
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,10 +54,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fooCdiaoJava.javaDiaoC1();
                 break;
             case R.id.cDiaojava2:
-                fooCdiaoJava.javaDiaoC2();
+                fooCdiaoJava.javac2();
                 break;
             case R.id.cDiaojava3:
                 fooCdiaoJava.javaDiaoC3();
+                break;
+            case R.id.cDiaojavajfeijingtai:
+                fooCdiaoJava.cNewObjectDiaoJava();
                 break;
         }
     }

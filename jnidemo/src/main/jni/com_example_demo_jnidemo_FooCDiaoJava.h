@@ -39,6 +39,14 @@ JNIEXPORT void JNICALL Java_com_example_demo_jnidemo_FooCDiaoJava_javaDiaoC2
 JNIEXPORT void JNICALL Java_com_example_demo_jnidemo_FooCDiaoJava_javaDiaoC3
   (JNIEnv *, jobject);
 
+/*
+ * Class:     com_example_demo_jnidemo_FooCDiaoJava
+ * Method:    cNewObjectDiaoJava
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_example_demo_jnidemo_FooCDiaoJava_cNewObjectDiaoJava
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif

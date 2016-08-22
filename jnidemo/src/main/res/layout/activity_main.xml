@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,26 +12,31 @@
     <TextView
         android:id="@+id/javaDiaoc"
         style="@style/ButtonAttr"
-        android:text="java调用c方法" />
+        android:text="java调用c方法 成功" />
 
     <TextView
         android:id="@+id/cDiaojavajingtai"
         style="@style/ButtonAttr"
-        android:text="c调用java方法静态" />
+        android:text="c调用java方法静态  成功" />
+    <TextView
+        android:id="@+id/cDiaojavajfeijingtai"
+        style="@style/ButtonAttr"
+        android:text="c调用java非静态方法 调用任意类 通过在new对象形式 成功" />
 
     <TextView
         android:id="@+id/cDiaojava1"
         style="@style/ButtonAttr"
-        android:text="java调用c方法无参" />
+        android:text="c调用java方法无参1" />
 
     <TextView
         android:id="@+id/cDiaojava2"
         style="@style/ButtonAttr"
-        android:text="java调用c方法有参" />
+        android:text="c调用java 方法有参2" />
 
     <TextView
         android:id="@+id/cDiaojava3"
         style="@style/ButtonAttr"
-        android:text="java调用c方法有参与返回值" />
+        android:text="c调用java方法有参与返回值3" />
 
 </LinearLayout>
+</ScrollView>
