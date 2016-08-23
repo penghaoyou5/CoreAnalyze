@@ -1,0 +1,13 @@
+1.与Host一起运行出现bug 在loadClass的时候出现了ClassNotFoundException 解决办法 将 改动build.gradle如下   compileSdkVersion 19 buildToolsVersion "19.1.0"
+2.出现bug
+Warning:Project is building density based multiple APKs but using tools version 19, you should upgrade to build-tools 21 or above to ensure proper packaging of resources.
+:plugin:processDebugResources FAILED
+Error:Execution failed for task ':plugin:processDebugResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/Users/bjhl/Library/Android/sdk/build-tools/19.1.0/aapt'' finished with non-zero exit value 1
+解决办法 去除v7支持
+
+3.出现bug
+Error:Execution failed for task ':plugin:transformClassesWithDexForDebug'.
+> com.android.build.api.transform.TransformException: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Multi dex requires Build Tools 21.0.0 / Current: 19.1
+解决办法 classpath 'com.android.tools.build:gradle:1.5.0' 改为1.5.0 或者1.3.0
+网址http://tieba.baidu.com/p/4490964793
